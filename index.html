@@ -1,12 +1,30 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content="Consultoria em precificação, projetos e orçamentos imobiliários." />
+    
+    <!-- Open Graph -->
+    <meta property="og:title" content="Dimensionamento de Empreendimentos Imobiliários" />
+    <meta property="og:description" content="Consultoria em precificação, projetos e orçamentos imobiliários." />
+    <meta property="og:image" content="https://www.seu-dominio.com/imagens/imagem_compartilhamento.jpg" />
+    <meta property="og:url" content="https://www.seu-dominio.com" />
+    <meta property="og:type" content="website" />
+    
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Dimensionamento de Empreendimentos Imobiliários" />
+    <meta name="twitter:description" content="Consultoria em precificação, projetos e orçamentos imobiliários." />
+    <meta name="twitter:image" content="https://www.seu-dominio.com/imagens/imagem_compartilhamento.jpg" />
+    
     <title>Dimensionamento de Empreendimentos Imobiliários</title>
+    
+    <!-- CSS -->
     <link rel="stylesheet" href="globals.css" />
     <link rel="stylesheet" href="style.css" />
+    
+    <!-- Fonte (opcional, pois já consta em globals.css) -->
     <link href="https://fonts.googleapis.com/css?family=Inter:400,600&display=swap" rel="stylesheet">
   </head>
   <body>
@@ -14,17 +32,18 @@
       <div class="desktop">
         <div class="property-default">
           <div class="overlap-group">
+            
+            <!-- Título e conteúdo principal -->
             <h1 class="page-title">Dimensionamento de Empreendimentos Imobiliários</h1>
             <div class="overlap">
               <div class="frame">
                 <p class="text-wrapper">
-                  O melhor projeto e o orçamento adequado são essenciais para se investir no mercado de imóveis novos
-                  para venda direta ao cliente final. As projeções de preço dos imóveis na região do empreendimento serão
-                  o balizador para a sua precificação.
+                    O melhor projeto e o orçamento adequado são essenciais para se investir no mercado de imóveis novos para venda direta ao cliente final. O preço dos imóveis na região do empreendimento será o balizador para a sua precificação. Assim, um cálculo adequado do valor do imóvel na planta ou de sua projeção quando pronto para a entrega será imprescindível para a rentabilidade e liquidez do negócio. Diante da precificação adequada do produto, demanda e disponibilidade de imóveis em padrão equivalente na mesma região ou regiões concorrentes se pode elaborar o orçamento e o projeto mais adequados para o investimento. Nosso serviço oferta a melhor consultoria em precificação, projetos e orçamentos para o seu negócio a preços muito competitivos. Atendemos todo o Brasil, todo tipo de empreendimento e edificação. 
                 </p>
               </div>
               <div class="bases-de-dados-wrapper">
                 <p class="bases-de-dados">
+                  Trabalhamos com:<br />
                   Bases de dados atualizadas<br />
                   Algoritmos de previsão com ajuste fino<br />
                   Alto poder preditivo<br />
@@ -32,21 +51,48 @@
                 </p>
               </div>
             </div>
-            <a href="https://wa.me/554191269383" target="_blank" rel="noopener noreferrer">
-              <img class="img" src="texto_zap.svg" />
-            </a>
-            <a href="https://wa.me/554191269383" target="_blank" rel="noopener noreferrer">
-              <div class="digital-glyph-green-wrapper">
-                <img class="digital-glyph-green" src="zap.svg" alt="WhatsApp Logo" width="50" height="50" />
-              </div>
-            </a>
-            <div class="div-wrapper">
-              <a href="mailto:flsousa1975@gmail.com" class="div">flsousa1975@gmail.com</a>
+            
+            <!-- Ícones do WhatsApp no canto inferior direito -->
+            <div class="bottom-right-icons">
+              <!-- texto_zap.svg fica à ESQUERDA visualmente (1º no HTML, mas usamos row-reverse no CSS) -->
+              <a href="https://wa.me/554191269383" target="_blank" rel="noopener noreferrer">
+                <img
+                  class="zap-text"
+                  src="texto_zap.svg"
+                  alt="Texto indicando link para contato via WhatsApp"
+                />
+              </a>
+
+              <!-- zap.svg fica à DIREITA visualmente (2º no HTML, mas row-reverse no CSS) -->
+              <a href="https://wa.me/554191269383" target="_blank" rel="noopener noreferrer">
+                <div class="digital-glyph-green-wrapper">
+                  <img
+                    class="zap-icon"
+                    src="zap.svg"
+                    alt="Ícone do WhatsApp"
+                  />
+                </div>
+              </a>
             </div>
-            <img class="mail-send-email" src="mail.svg" alt="Email Icon" width="50" height="50" />
-          </div>
-        </div>
-      </div>
-    </div>
+            
+            <!-- Ícone e texto de e-mail no canto inferior direito -->
+            <div class="bottom-right-email">
+              <!-- Texto do e-mail fica à ESQUERDA visualmente (1º no HTML, mas row-reverse no CSS) -->
+              <a href="mailto:flsousa1975@gmail.com" aria-label="Enviar e-mail" class="email-link">
+                flsousa1975@gmail.com
+              </a>
+
+              <!-- Ícone do e-mail fica à DIREITA visualmente (2º no HTML, mas row-reverse no CSS) -->
+              <img
+                class="mail-icon"
+                src="mail.svg"
+                alt="Ícone de envelope para e-mail"
+              />
+            </div>
+            
+          </div> <!-- overlap-group -->
+        </div> <!-- property-default -->
+      </div> <!-- desktop -->
+    </div> <!-- box -->
   </body>
 </html>
