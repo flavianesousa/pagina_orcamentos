@@ -1,0 +1,112 @@
+/* General Styling */
+.box {
+  width: 100%;
+  max-width: 1440px;
+  height: 100vh;
+  margin: 0 auto;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Desktop Layout */
+.box .desktop {
+  position: relative;
+  width: 100%;
+  max-width: 1440px;
+  height: 100vh;
+  border-radius: 5px;
+  overflow: hidden;
+  border: 1px dashed #9747ff;
+}
+
+/* Scroll Handling */
+.box .property-default {
+  height: 100%;
+  background-color: #ffffff;
+  overflow-y: auto;
+  scrollbar-width: none;  /* Firefox */
+}
+.box .property-default::-webkit-scrollbar {
+  display: none;  /* Chrome, Safari */
+}
+
+/* Background Image */
+.box .overlap-group {
+  position: relative;
+  width: 100%;
+  max-width: 1440px;
+  height: 100vh;
+  background-image: url(https://c.animaapp.com/vHjHHGTz/img/caixa-texto-1.png);
+  background-size: cover;
+  background-position: center;
+}
+
+/* Responsive Typography */
+.box .text-wrapper {
+  width: 80%;
+  max-width: 639px;
+  text-shadow: 0px 4px 4px #00000040;
+  font-family: "Inter", sans-serif;
+  font-weight: 600;
+  color: #000000;
+  font-size: 1.25rem; /* 20px */
+  text-align: justify;
+}
+
+/* Responsive Images */
+.box .img,
+.box .digital-glyph-green {
+  width: 100%;
+  max-width: 244px;
+  height: auto;
+  transition: transform 0.3s ease-in-out;
+}
+
+.box .digital-glyph-green-wrapper:hover {
+  transform: scale(1.1);
+}
+
+/* Contact Section */
+.box .div-wrapper {
+  text-align: center;
+}
+.box .div a {
+  font-family: "Inter", sans-serif;
+  font-size: 1.5rem; /* 36px */
+  color: #ffffff;
+  text-decoration: none;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 1024px) {
+  .box .text-wrapper {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .box .desktop {
+    border: none;
+  }
+  .box .text-wrapper {
+    font-size: 0.9rem;
+  }
+  .box .img,
+  .box .digital-glyph-green {
+    max-width: 150px;
+  }
+}
+
+@media (max-width: 480px) {
+  .box .text-wrapper {
+    font-size: 0.8rem;
+    text-align: left;
+  }
+  .box .img,
+  .box .digital-glyph-green {
+    max-width: 120px;
+  }
+}

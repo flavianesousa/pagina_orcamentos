@@ -1,0 +1,78 @@
+/* Import reset styles and Google Fonts */
+@import url("https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css");
+@import url("https://fonts.googleapis.com/css?family=Inter:400,600&display=swap");
+
+/* General styling for smoother font rendering */
+* {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Ensure full height layout */
+html,
+body {
+  width: 100%;
+  height: 100%;
+  font-family: "Inter", sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #333;
+  background-color: #f9f9f9;
+}
+
+/* Set default link behavior */
+a {
+  text-decoration: none;
+  color: inherit;
+  transition: color 0.3s ease-in-out;
+}
+
+a:hover {
+  color: #4a90e2;
+}
+
+/* Generic focus style for better accessibility */
+button:focus-visible,
+input:focus-visible,
+textarea:focus-visible,
+a:focus-visible {
+  outline: 2px solid #4a90e2 !important;
+  outline-offset: 2px;
+}
+
+/* Ensure images don't overflow */
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Utility classes for spacing */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.text-center {
+  text-align: center;
+}
+
+/* Button styles */
+.btn {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #4a90e2;
+  color: #fff;
+  border-radius: 5px;
+  text-align: center;
+  font-weight: 600;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.btn:hover {
+  background-color: #357abd;
+}
